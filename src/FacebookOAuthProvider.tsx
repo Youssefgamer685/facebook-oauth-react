@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext, useEffect } from "react";
 import useLoadFBScript, { UseLoadFBScriptOptions } from "./hooks/useLoadFBScript";
 
 declare const window: any;
