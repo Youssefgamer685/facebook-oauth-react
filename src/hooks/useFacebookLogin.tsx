@@ -18,13 +18,15 @@ interface UseFacebooksLoginProps {
 
 const useFacebookLogin = ({ onSuccess, onError }: UseFacebooksLoginProps) => {
   return () => {
-    window.FB.login((response: { status: "connected" | "not_authorized" | "unknown", authResponse: AuthResponse }) => {
-      if (response.status === "connected") {
-        onSuccess(response.authResponse);
-      } else {
-        onError?.();
-      };
-    });
+    try {
+      window.FB.login((response: { status: "connected" | "not_authorized" | "unknown", authResponse: AuthResponse }) => {
+        if (response.status === "connected") {
+          onSuccess(response.authResponse);
+        } else {
+          onError?.();
+        };
+      });
+    } catch (error) {};
   };
 };
 
