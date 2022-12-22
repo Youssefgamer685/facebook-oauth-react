@@ -1,4 +1,4 @@
-# react-facebook-oauth
+# facebook-oauth-react
 
 This package made for easily implement facebook oauth in your react app
 
