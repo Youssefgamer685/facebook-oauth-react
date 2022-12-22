@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
     "build:esm": "tsc"
   },

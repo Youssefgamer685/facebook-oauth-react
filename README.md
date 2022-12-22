@@ -48,3 +48,26 @@ Use `useFacebookLogin()` hook
 ---
 
 ### `<FacebookOAuthProvider>`
+|Property|Description|
+|--------|-----------|
+|appId|Required: Facebook App ID|
+|appVersion|Required: Facebook App Version|
+|onScriptLoadSuccess|Optional: Callback fires on load [FB](https://connect.facebook.net/en_US/sdk.js) script success|
+|onScriptLoadError|Optional: Callback fires on load [FB](https://connect.facebook.net/en_US/sdk.js) script failure|
+
+### `useFacebookLogin`
+|Property|Description|
+|--------|-----------|
+|onSuccess|Required: Callback fires on success, This function have an [AuthResponse](#AuthResponse) argument|
+|onError|Optional: Callback fires on error|
+
+### `AuthResponse`
+
+    {
+      accessToken: string;
+      expiresIn: number | string;
+      reauthorize_required_in: number;
+      graphDomain: string;
+      signedRequest: string;
+      userID: string;
+    }
