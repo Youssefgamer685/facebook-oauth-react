@@ -3,7 +3,6 @@
 This package made for easily implement facebook oauth in your react app
 
 ## How to install
----
 
 ### yarn:
 
@@ -18,7 +17,6 @@ This package made for easily implement facebook oauth in your react app
     pnpm add react-facebook-oauth
 
 ## Usage
----
 
 Wrap your app in `<FacebookOAuthProvider>`
 
@@ -45,9 +43,9 @@ Use `useFacebookLogin()` hook
     };
 
 ## API:
----
 
 ### `<FacebookOAuthProvider>`
+
 |Property|Description|
 |--------|-----------|
 |appId|Required: Facebook App ID|
@@ -56,6 +54,7 @@ Use `useFacebookLogin()` hook
 |onScriptLoadError|Optional: Callback fires on load [FB](https://connect.facebook.net/en_US/sdk.js) script failure|
 
 ### `useFacebookLogin`
+
 |Property|Description|
 |--------|-----------|
 |onSuccess|Required: Callback fires on success, This function have an [AuthResponse](#AuthResponse) argument|
