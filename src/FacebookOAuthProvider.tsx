@@ -19,8 +19,8 @@ const FacebookOAuthProvider = ({ appId, appVersion, onScriptLoadSuccess, onScrip
       window.FB.init({
         appId,
         version: appVersion,
-        cookies: true,
-        xfbml: true,  
+        localStorage: false,
+        xfbml: true,
       });
   
       window.FB.AppEvents.logPageView();
