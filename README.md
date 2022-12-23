@@ -20,28 +20,28 @@ This package made for easily implement facebook oauth in your react app
 
 Wrap your app in `<FacebookOAuthProvider>`
 ```js
-    import ReactDOM from "react-dom/client";
-    import { FacebookOAuthProvider } from "react-facebook-oauth";
+import ReactDOM from "react-dom/client";
+import { FacebookOAuthProvider } from "react-facebook-oauth";
 
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(
-      <FacebookOAuthProvider>
-        <YOUR-APP>
-      </FacebookOAuthProvider>
-    );
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <FacebookOAuthProvider>
+    <YOUR-APP>
+  </FacebookOAuthProvider>
+);
 ```
 
 Use `useFacebookLogin()` hook
 ```js
-    import { useFacebookLogin } from "react-facebook-oauth";
+import { useFacebookLogin } from "react-facebook-oauth";
 
-    const App = () => {
-      const facebookLogin = useFacebookLogin({ onSuccess: (authResponse) => console.log(authresponse) });
+const App = () => {
+  const facebookLogin = useFacebookLogin({ onSuccess: (authResponse) => console.log(authresponse) });
 
-      <MyCustomButton onClick={() => facebookLogin()}>
-        Login with facebook
-      </MyCustomButton>
-    };
+  <MyCustomButton onClick={() => facebookLogin()}>
+    Login with facebook
+  </MyCustomButton>
+};
 ```
 
 ## API:
