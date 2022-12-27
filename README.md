@@ -28,7 +28,7 @@ import { FacebookOAuthProvider } from "react-facebook-oauth";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <FacebookOAuthProvider>
+  <FacebookOAuthProvider appId={APP_ID} appVersion={APP_VERSION}>
     <YOUR-APP>
   </FacebookOAuthProvider>
 );
