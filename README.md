@@ -1,6 +1,6 @@
 # facebook-oauth-react
 
-This package made for easily implement facebook oauth in your react app
+This package made for easily facebook oauth implementation in your react app
 
 ## How to install
 
@@ -63,12 +63,13 @@ const App = () => {
 |onError|Optional: Callback fires on error|
 
 ### `AuthResponse`
-
-    {
-      accessToken: string;
-      expiresIn: number | string;
-      reauthorize_required_in: number;
-      graphDomain: string;
-      signedRequest: string;
-      userID: string;
-    }
+```ts
+{
+  accessToken: string;
+  expiresIn: number | string;
+  reauthorize_required_in: number;
+  graphDomain: string;
+  signedRequest: string;
+  userID: string;
+}
+```
