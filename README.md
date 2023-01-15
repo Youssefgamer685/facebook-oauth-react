@@ -39,7 +39,7 @@ Use `useFacebookLogin()` hook.
 import { useFacebookLogin } from "react-facebook-oauth";
 
 const App = () => {
-  const facebookLogin = useFacebookLogin({ onSuccess: (authResponse) => console.log(authresponse) });
+  const facebookLogin = useFacebookLogin({ onSuccess: (authResponse) => console.log(authResponse) });
 
   <MyCustomButton onClick={() => facebookLogin()}>
     Login with facebook
